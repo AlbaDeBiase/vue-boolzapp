@@ -17,7 +17,7 @@
         <div class="header-bottom">
 
         </div>
-        <div class="container">
+        <div id="container" class="container">
             <div class="section-left">
                 <div class="section-avatar">
                     <img src="https://www.flaticon.com/svg/static/icons/svg/194/194938.svg" alt="">
@@ -36,6 +36,12 @@
                     <i class="fas fa-search"></i>
                      <input class="search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
+                <ul id="lista">
+                    <li v-for="(contact,indice ) in contacts" :key=contact>
+                        {{contact.name}}
+                        <i class="fas fa-check"></i>
+                    </li>
+                </ul>
                 <div class="section-contacts">
 
                 </div>
