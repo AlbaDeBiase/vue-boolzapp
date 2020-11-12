@@ -5,7 +5,7 @@
 }
 
 .header-top {
-    height: 100px;
+    height: 150px;
     background-color:green;
 }
 
@@ -18,7 +18,7 @@
     width: 1200px;
     height: 800px;
     position: absolute;
-    top: 50px;
+    top: 35px;
     left: 150px;
     background-color: blue;
 }
@@ -37,4 +37,15 @@
     height: 800px;
     float: left;
 
+}
+
+.section-contacts{
+    height: 70px;
+    background-color: red;
+}
+
+.section-contacts img{
+    width: 64px;
+    text-align: center;
+    padding: 5px;
 }
