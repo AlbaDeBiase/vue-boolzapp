@@ -16,7 +16,7 @@
 
 .container {
     width: 1200px;
-    height: 800px;
+    height: 840px;
     position: absolute;
     top: 35px;
     left: 150px;
@@ -26,7 +26,7 @@
 .section-left {
     background-color: pink;
     width: 500px;
-    height: 800px;
+    height: 840px;
     float: left;
 
 }
@@ -34,22 +34,22 @@
 .section-right {
     background-color: yellow;
     width: 700px;
-    height: 800px;
+    height: 840px;
     float: left;
 
 }
 
-.section-contacts {
+.section-avatar {
     height: 70px;
     background-color: red;
 }
 
-.section-contacts img {
+.section-avatar img {
     width: 64px;
     padding: 5px;
 }
 
-.section-contacts i {
+.section-avatar i {
     padding:17px;
     float: right;
     font-size: 25px;
@@ -97,4 +97,10 @@ ul li:first-child {
     width: 200px;
     height: 34px;
     border-color: lightgrey;
+}
+
+.section-contacts{
+    height: 80px;
+    background-color: #eaeaea;
+    border:1px solid lightgrey;
 }
