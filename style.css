@@ -31,7 +31,7 @@
 
 }
 
-.section-right{
+.section-right {
     background-color: yellow;
     width: 700px;
     height: 800px;
@@ -39,13 +39,62 @@
 
 }
 
-.section-contacts{
+.section-contacts {
     height: 70px;
     background-color: red;
 }
 
-.section-contacts img{
+.section-contacts img {
     width: 64px;
-    text-align: center;
     padding: 5px;
+}
+
+.section-contacts i {
+    padding:17px;
+    float: right;
+    font-size: 25px;
+    color:white;
+
+}
+
+.section-messages {
+    height: 80px;
+    background-color: lightblue;
+
+}
+
+.section-messages i{
+    font-size: 25px;
+    border-radius: 100%;
+    padding: 8px;
+    background-color: white;
+    color:lightblue;
+    float: left;
+    margin: 15px;
+
+
+}
+
+.section-messages li{
+    list-style-type: none;
+}
+ul li:first-child {
+    padding-top: 16px;
+}
+
+.section-search{
+    background-color: white;
+    height: 50px;
+}
+
+.section-search i{
+    font-size: 18px;
+    color:grey;
+    margin: 14px 35px;
+}
+
+.search-bar{
+    width: 200px;
+    height: 34px;
+    border-color: lightgrey;
 }
