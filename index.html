@@ -36,10 +36,9 @@
                     <i class="fas fa-search"></i>
                      <input class="search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
-                <ul id="lista">
-                    <li v-for="(contact,indice ) in contacts" :key=contact>
+                <ul id="contacts">
+                    <li v-for="(contact,indice) in contacts">
                         {{contact.name}}
-                        <i class="fas fa-check"></i>
                     </li>
                 </ul>
                 <div class="section-contacts">
