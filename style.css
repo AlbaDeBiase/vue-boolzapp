@@ -9,14 +9,32 @@
     background-color:green;
 }
 
-.header-bottom{
+.header-bottom {
     height: 800px;
     background-color: lightgrey;
 }
 
-.container{
+.container {
+    width: 1200px;
+    height: 800px;
     position: absolute;
     top: 50px;
     left: 150px;
     background-color: blue;
+}
+
+.section-left {
+    background-color: pink;
+    width: 500px;
+    height: 800px;
+    float: left;
+
+}
+
+.section-right{
+    background-color: yellow;
+    width: 700px;
+    height: 800px;
+    float: left;
+
 }
