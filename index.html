@@ -51,18 +51,10 @@
                         <i class="fas fa-ellipsis-v"></i>
                 </div>
                 <div class="chat-messages">
-
-
                      <div class="message-received"  v-for="(element,indice) in contacts[indexvalue].messages" :class="element.status" >
-                                    {{element.message}}
+                            {{element.message}}
+                        <p class="element-date">{{element.date}}</p>
                     </div>
-
-                    <!-- <div class="message-sent" v-for="(contact,indice) in contacts" :class="contact.status" >
-
-                                    {{contact.messages[indexvalue,1].message}}
-                    </div> -->
-
-
                 </div>
                 <div class="footer-invio">
                     <i class="far fa-smile"></i>
