@@ -32,6 +32,7 @@ body{
     width: 450px;
     height: 840px;
     float: left;
+    overflow-y: scroll;
 
 }
 

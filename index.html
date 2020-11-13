@@ -32,7 +32,7 @@
                      <input class="search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
                 <div class="section-contacts" v-for="(contact,indice) in contacts">
-                    <img class="avatar-contacts" src="https://www.flaticon.com/svg/static/icons/svg/194/194923.svg" alt="">
+                    <img class="avatar-contacts" :src="'img/avatar'+ contact.avatar + '.png'" :alt="contact.name">
                     {{contact.name}}
                     <span class="date">17.53</span>
                     <p class="message-contacts">Non poteva essere altrimenti</p>
@@ -50,14 +50,17 @@
                         <i class="fas fa-paperclip"></i>
                         <i class="fas fa-ellipsis-v"></i>
                 </div>
-                <div class="chat-messages">
-                    <div class="message-received">
-                    <!-- {{contact.messages}} -->
+                <!-- <div class="chat-messages"v-for="contacts[indexvalue]messages">
+                    <span :class="contact.status">
+                        {{contact.message}}
+                    </span> -->
+                    <!-- <div class="message-received" >
+
                         <p>come stai?</p>
-                    </div>
-                    <div class="message-sent">
+                    </div> -->
+                    <!-- <div class="message-sent">
                         <p>Bene grazie e tu?</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="footer-invio">
                     <i class="far fa-smile"></i>
