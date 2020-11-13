@@ -2,6 +2,7 @@ var app = new Vue({
 
     el: '#container',
     data: {
+        indice_avatar:0,
         contacts: [
             {
                 name: 'Michele',

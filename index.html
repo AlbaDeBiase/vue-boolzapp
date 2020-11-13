@@ -8,14 +8,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     </head>
     <body>
-
-
-
         <div class="header-top">
-
         </div>
         <div class="header-bottom">
-
         </div>
         <div id="container" class="container">
             <div class="section-left">
@@ -36,43 +31,41 @@
                     <i class="fas fa-search"></i>
                      <input class="search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
-                <!-- <ul id="contacts">
-                    <li v-for="(contact,indice) in contacts">
-                        {{contact.name,}}
-                    </li>
-                </ul> -->
                 <div class="section-contacts" v-for="(contact,indice) in contacts">
-                    {{contact.name,}}
-
+                    <img class="avatar-contacts" src="https://www.flaticon.com/svg/static/icons/svg/194/194923.svg" alt="">
+                    {{contact.name}}
+                    <span class="date">17.53</span>
+                    <p class="message-contacts">Non poteva essere altrimenti</p>
                 </div>
-                <div class="section-contacts">
 
-                </div>
-                <div class="section-contacts">
-
-                </div>
-                <div class="section-contacts">
-
-                </div>
-                <div class="section-contacts">
-
-                </div>
-                <div class="section-contacts">
-
-                </div>
-                <div class="section-contacts">
-
-                </div>
-                <div class="section-contacts">
-
-                </div>
             </div>
             <div class="section-right">
-
+                <div class="section-user">
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/194/194921.svg" alt="">
+                    <ul>
+                        <li><span>Michele</span></li>
+                        <li><span>Ultimo accesso oggi 15.40</span></li>
+                    </ul>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-paperclip"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <div class="chat-messages">
+                    <div class="message-received">
+                    <!-- {{contact.messages}} -->
+                        <p>come stai?</p>
+                    </div>
+                    <div class="message-sent">
+                        <p>Bene grazie e tu?</p>
+                    </div>
+                </div>
+                <div class="footer-invio">
+                    <i class="far fa-smile"></i>
+                    <input type="text" name="" value="" placeholder="Scrivi un messaggio">
+                    <i class="fas fa-microphone"></i>
+                </div>
             </div>
         </div>
-
-
-        <script src="main.js" charset="utf-8"></script>
+            <script src="main.js" charset="utf-8"></script>
     </body>
 </html>
