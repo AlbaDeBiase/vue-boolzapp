@@ -116,6 +116,7 @@ body{
     background-color: #eaeaea;
     border:1px solid lightgrey;
     padding-right: 5px;
+    cursor: pointer;
 
 }
 

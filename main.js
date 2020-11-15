@@ -1,3 +1,6 @@
+
+
+// Click sul contatto​ mostra la conversazione del contatto cliccato
 var app = new Vue({
 
     el: '#container',
@@ -96,5 +99,12 @@ var app = new Vue({
             },
         ],
     },
+
+    methods: {
+        cambiaContatto(indice) {
+            this.indexvalue=indice;
+        }
+
+                },
 
 })
