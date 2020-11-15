@@ -9,11 +9,13 @@ body{
 }
 
 .header-top {
+    width: 1550px;
     height: 150px;
     background-color:#128c7e;
 }
 
 .header-bottom {
+    width: 1550px;
     height: 800px;
     background-color: lightgrey;
 }
@@ -23,7 +25,7 @@ body{
     height: 840px;
     position: absolute;
     top: 35px;
-    left: 150px;
+    left: 180px;
     background-color: blue;
 }
 
@@ -177,7 +179,7 @@ body{
     opacity: 0.5;
 }
 
-.chat-messages {
+.chatMessages {
     height: 700px;
 
 }

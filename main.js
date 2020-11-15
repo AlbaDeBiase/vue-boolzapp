@@ -1,11 +1,12 @@
 
-
-// Click sul contatto​ mostra la conversazione del contatto cliccato
+// ’utente scrive un testo nella parte bassa e digitando“enter”
+// il testo viene aggiunto al thread sopra, come messaggio verde
 var app = new Vue({
 
     el: '#container',
     data: {
         indexvalue:0,
+        new_message: '',
         contacts: [
             {
                 name: 'Michele',
@@ -101,10 +102,18 @@ var app = new Vue({
     },
 
     methods: {
-        cambiaContatto(indice) {
+        change_contact(indice) {
             this.indexvalue=indice;
-        }
+        },
 
-                },
 
+
+        insert_message() {
+            this.contacts.messages.push({message:this.new_message});
+            // resetto l'input
+            // message: this.new_message='';
+
+        },
+
+    }
 })

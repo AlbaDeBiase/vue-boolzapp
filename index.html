@@ -31,7 +31,7 @@
                     <i class="fas fa-search"></i>
                      <input class="search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
-                <div class="section-contacts" v-for="(contact,indice) in contacts" @click="cambiaContatto(indice)">
+                <div class="section-contacts" v-for="(contact,indice) in contacts" @click="change_contact(indice)">
                     <img class="avatar-contacts" :src="'img/avatar'+ contact.avatar + '.png'" :alt="contact.name">
                     {{contact.name}}
                     <span class="date">17.53</span>
@@ -50,7 +50,7 @@
                         <i class="fas fa-paperclip"></i>
                         <i class="fas fa-ellipsis-v"></i>
                 </div>
-                <div class="chat-messages">
+                <div class="chatMessages">
                      <div class=""  v-for="(element,indice) in contacts[indexvalue].messages" :class="element.status" >
                             {{element.message}}
                         <p class="element-date">{{element.date}}</p>
@@ -58,7 +58,8 @@
                 </div>
                 <div class="footer-invio">
                     <i class="far fa-smile"></i>
-                    <input type="text" name="" value="" placeholder="Scrivi un messaggio">
+                    <input type="text" name="" value="" @keyup.enter="insert_message" placeholder="Scrivi un messaggio">
+                    <!-- <p> {{new_message}}</p> -->
                     <i class="fas fa-microphone"></i>
                 </div>
             </div>
