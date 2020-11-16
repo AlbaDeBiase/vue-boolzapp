@@ -108,8 +108,8 @@ var app = new Vue({
 
 
 
-        insert_message() {
-            this.contacts.messages.push({message:this.new_message});
+        insert_message(indice) {
+            (this.contacts[0].messages[0]).push({message:this.new_message});
             // resetto l'input
             // message: this.new_message='';
 

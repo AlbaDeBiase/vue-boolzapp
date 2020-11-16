@@ -31,19 +31,19 @@
                     <i class="fas fa-search"></i>
                      <input class="search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
-                <div class="section-contacts" v-for="(contact,indice) in contacts" @click="change_contact(indice)">
+                <div class="section-contacts" v-for="(contact,indice) in contacts" @click="change_contact(indice)"
+                :class="indice ==indexvalue ? 'active' : ''">
                     <img class="avatar-contacts" :src="'img/avatar'+ contact.avatar + '.png'" :alt="contact.name">
                     {{contact.name}}
                     <span class="date">17.53</span>
                     <p class="message-contacts">Non poteva essere altrimenti</p>
                 </div>
-
             </div>
             <div class="section-right">
                 <div class="section-user">
-                    <img src="https://www.flaticon.com/svg/static/icons/svg/194/194921.svg" alt="">
+                    <img :src="'img/avatar' + contacts[indexvalue].avatar + '.png'" alt="">
                     <ul>
-                        <li><span>Michele</span></li>
+                        <li><span>{{contacts[indexvalue].name}}</span></li>
                         <li><span>Ultimo accesso oggi 15.40</span></li>
                     </ul>
                         <i class="fas fa-search"></i>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="footer-invio">
                     <i class="far fa-smile"></i>
-                    <input type="text" name="" value="" @keyup.enter="insert_message" placeholder="Scrivi un messaggio">
+                    <input v-model="new_message" type="text" name="" value="" @keyup.enter="insert_message" placeholder="Scrivi un messaggio"  >
                     <!-- <p> {{new_message}}</p> -->
                     <i class="fas fa-microphone"></i>
                 </div>
