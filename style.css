@@ -9,20 +9,20 @@ body{
 }
 
 .header-top {
-    /* width: 1550px; */
+    width: 1550px;
     height: 150px;
     background-color:#128c7e;
 }
 
 .header-bottom {
-    /* width: 1550px; */
-    height: 800px;
+    width: 1550px;
+    height: 550px;
     background-color: lightgrey;
 }
 
 .container {
     width: 1200px;
-    height: 840px;
+    height: 90%;
     position: absolute;
     top: 35px;
     left: 180px;
@@ -32,7 +32,7 @@ body{
 .section-left {
     background-color: #eaeaea;
     width: 450px;
-    height: 840px;
+    height: 100%;
     float: left;
 
 
@@ -41,14 +41,14 @@ body{
 .section-right {
     background-color:#ECE5DD;
     width: 750px;
-    height: 840px;
+    height: 100%;
     float: left;
 
 
 }
 
 .section-avatar {
-    height: 70px;
+    height: 10%;
     background-color: #eaeaea;
 }
 
@@ -67,7 +67,7 @@ body{
 }
 
 .section-messages {
-    height: 80px;
+    height: 10%;
     background-color: lightblue;
 
 }
@@ -97,7 +97,7 @@ body{
 
 .section-search {
     background-color: white;
-    height: 50px;
+    height: 8%;
 }
 
 .section-search i {
@@ -114,7 +114,7 @@ body{
 }
 
 .section-contacts {
-    height: 80px;
+    height: 10%;
     background-color: #eaeaea;
     border:1px solid lightgrey;
     padding-right: 5px;
@@ -142,7 +142,7 @@ body{
 }
 
 .section-user {
-    height: 70px;
+    height: 10%;
     background-color: #eaeaea;
     border-left: 1px solid lightgrey;
 }
@@ -180,7 +180,7 @@ body{
 }
 
 .chatMessages {
-    height: 700px;
+    height: 80%;
     overflow-y: scroll;
 
 }
@@ -211,7 +211,7 @@ body{
 }
 
 .footer-invio {
-    height: 70px;
+    height: 10%;
     background-color: #eaeaea;
     border-left: 1px solid lightgrey;
 }
@@ -224,7 +224,7 @@ body{
 
 .footer-invio input{
     width: 550px;
-    height: 50px;
+    /* height: 50px; */
     border: white;
     padding-top: 14px;
     opacity: 0.5;
