@@ -109,24 +109,29 @@ var app = new Vue({
 
 
 
-        insert_message() {
+        insert_message(new_message) {
             (this.contacts[this.indexvalue].messages).push({
                 message:this.new_message,
                 status:'sent',
-                date: '15.30'
+                date: '16.15'
             });
+
+            if (new_message != ''){
+                this.new_message = '';
+            }
 
         setTimeout(() => {
             (this.contacts[this.indexvalue].messages).push({
                 message:this.replyok,
                 status:'received',
-                date: '15.30'
+                date: '16.16'
             });
 
-        })
+        },1500)
 
         },
 
+        // searchName(()) {}
     } // chiudo methods
-    
+
 }) // chiudo app
