@@ -127,5 +127,6 @@ var app = new Vue({
 
         },
 
-    }// chiudo methods
-})
+    } // chiudo methods
+    
+}) // chiudo app

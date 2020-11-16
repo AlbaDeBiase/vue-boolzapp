@@ -181,6 +181,7 @@ body{
 
 .chatMessages {
     height: 700px;
+    overflow-y: scroll;
 
 }
 
