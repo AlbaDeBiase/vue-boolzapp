@@ -7,6 +7,7 @@ var app = new Vue({
     data: {
         indexvalue:0,
         new_message: '',
+        replyok: "ok",
         contacts: [
             {
                 name: 'Michele',
@@ -115,12 +116,16 @@ var app = new Vue({
                 date: '15.30'
             });
 
+        setTimeout(() => {
+            (this.contacts[this.indexvalue].messages).push({
+                message:this.replyok,
+                status:'received',
+                date: '15.30'
+            });
 
-
-            // resetto l'input
-            // message: this.new_message='';
+        })
 
         },
 
-    }
+    }// chiudo methods
 })
