@@ -7,7 +7,8 @@ var app = new Vue({
     data: {
         indexvalue:0,
         new_message: '',
-        replyok: "ok",
+        replyok: 'ok',
+        search: '',
         contacts: [
             {
                 name: 'Michele',
@@ -131,7 +132,28 @@ var app = new Vue({
 
         },
 
-        // searchName(()) {}
+        // searchName(){
+        //     this.contacts.forEach((contact, i) => {
+        //         if (contact.name.includes(this.search)) {
+        //             contact.visible = true;
+        //         }else{
+        //             contact.visible = false;
+        //         }
+        //     });
+        //
+        // },
+
+
+
+
+        // computed: {
+        // filteredContacts:function() {
+        //     return this.contacts.filter((contact)=>{
+        //         return contact.name.match(this.search)
+        //     });
+        // }
+        // }
+
     } // chiudo methods
 
 }) // chiudo app

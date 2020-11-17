@@ -29,7 +29,13 @@
                 </div>
                 <div class="section-search">
                     <i class="fas fa-search"></i>
-                     <input class="search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
+                     <input class="search-bar" type="text" @keyup.enter="searchName" placeholder="Cerca o inizia una nuova chat" v-model="search">
+                </div>
+                 <div class="section-search2">
+
+
+                        <p>{{search}}</p>
+
                 </div>
                 <div class="section-contacts" v-for="(contact,indice) in contacts" @click="change_contact(indice)"
                 :class="indice ==indexvalue ? 'active' : ''">
