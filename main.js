@@ -110,38 +110,38 @@ var app = new Vue({
 
 
 
-        insert_message(new_message) {
+        insert_message() {
             (this.contacts[this.indexvalue].messages).push({
                 message:this.new_message,
                 status:'sent',
                 date: '16.15'
             });
 
-            if (new_message != ''){
+
                 this.new_message = '';
-            }
 
-        setTimeout(() => {
-            (this.contacts[this.indexvalue].messages).push({
-                message:this.replyok,
-                status:'received',
-                date: '16.16'
-            });
 
-        },1500)
+            setTimeout(() => {
+                (this.contacts[this.indexvalue].messages).push({
+                    message:this.replyok,
+                    status:'received',
+                    date: '16.16'
+                });
+
+            },1500)
 
         },
 
-        // searchName(){
-        //     this.contacts.forEach((contact, i) => {
-        //         if (contact.name.includes(this.search)) {
-        //             contact.visible = true;
-        //         }else{
-        //             contact.visible = false;
-        //         }
-        //     });
-        //
-        // },
+        searchName(){
+            this.contacts.forEach((contact, i) => {
+                if (contact.name.includes(this.search)) {
+                    contact.visible = true;
+                }else{
+                    contact.visible = false;
+                }
+            });
+
+        },
 
 
 
