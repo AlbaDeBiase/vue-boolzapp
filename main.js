@@ -9,6 +9,7 @@ var app = new Vue({
         new_message: '',
         replyok: 'ok',
         search: '',
+        toggle: false,
         contacts: [
             {
                 name: 'Michele',
@@ -142,6 +143,11 @@ var app = new Vue({
             });
 
         },
+
+        // clickMenu(){
+        //     // al click apri il menu
+        //     ("#dropdown-menu").show
+        // },
 
 
 

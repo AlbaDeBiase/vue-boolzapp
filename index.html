@@ -29,7 +29,7 @@
                 </div>
                 <div class="section-search">
                     <i class="fas fa-search"></i>
-                     <input class="search-bar" type="text" @keyup="searchName =! searchName" placeholder="Cerca o inizia una nuova chat" v-model="search">
+                     <input class="search-bar" type="text" @keyup="searchName" placeholder="Cerca o inizia una nuova chat" v-model="search">
                 </div>
                  <!-- <div class="section-search2">
 
@@ -38,7 +38,7 @@
 
                 </div> -->
                 <div class="section-contacts" v-for="(contact,indice) in contacts" @click="change_contact(indice)"
-                :class="indice ==indexvalue ? 'active' : ''"v-if="contact.name==search ? 'visible' :''"  >
+                :class="indice ==indexvalue ? 'active' : ''" v-if="contact.name == search ? 'visible' :''"  >
 
                     <img class="avatar-contacts" :src="'img/avatar'+ contact.avatar + '.png'" :alt="contact.name">
                     {{contact.name}}
@@ -60,8 +60,14 @@
                         <i class="fas fa-ellipsis-v"></i>
                 </div>
                 <div class="chatMessages">
-                     <div class=""  v-for="(element,indice) in contacts[indexvalue].messages" :class="element.status" >
-                            {{element.message}}
+                     <div class="messages"  v-for="(element,indice) in contacts[indexvalue].messages" :class="element.status" >
+                        <p class="element-message" @click='toggle = !toggle' >{{element.message}}</p>
+                            <div v-show='toggle'class="dropdown-menu">
+                                <ul>
+                                    <li>Message info</li>
+                                    <li>Delete Message</li>
+                                </ul>
+                            </div>
                         <p class="element-date">{{element.date}}</p>
                     </div>
                 </div>
