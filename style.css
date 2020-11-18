@@ -194,13 +194,20 @@ body{
 }
 
 .dropdown-menu{
-    width: 80px;
+    width: 140px;
     height: 80px;
+    padding: 5px 5px;
+    line-height: 24px;
     background-color: white;
 }
 
 .dropdown-menu ul li{
     list-style-type: none;
+    cursor: pointer;
+}
+
+.delete-message{
+    cursor: pointer;
 }
 
 .received {
@@ -258,4 +265,10 @@ body{
 
 .active:hover{
     background-color:grey;
+}
+
+.grande{
+    height: 10%;
+    width: 60px;
+    background-color: yellow;
 }

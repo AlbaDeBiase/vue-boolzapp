@@ -144,6 +144,16 @@ var app = new Vue({
 
         },
 
+        // openMenu(){
+        //     this.contacts[this.indexvalue].messages.show()
+        // element.message
+        // },
+
+        removeMessage(index){
+            this.contacts[this.indexvalue].messages.splice(index, 1)
+        }
+
+
         // clickMenu(){
         //     // al click apri il menu
         //     ("#dropdown-menu").show
