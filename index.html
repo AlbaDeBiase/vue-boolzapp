@@ -38,8 +38,7 @@
 
                 </div> -->
                 <div class="section-contacts" v-for="(contact,indice) in contacts" @click="change_contact(indice)"
-                :class="indice ==indexvalue ? 'active' : ''" v-if="contact.name == search ? 'visible' :''" >
-                <!-- v-if="contact.name == search ? 'visible' :''" -->
+                :class="indice ==indexvalue ? 'active' : ''"v-if="contact.visible" >
                     <img class="avatar-contacts" :src="'img/avatar'+ contact.avatar + '.png'" :alt="contact.name">
                     {{contact.name}}
                     <!-- {{contact.visible}} -->
@@ -64,7 +63,7 @@
                         <p class="element-message" @click='toggle = !toggle' >{{element.message}}</p>
                             <div v-show='toggle'class="dropdown-menu">
                                 <ul>
-                                    <li>Message info</li>
+                                    <li>Message info <i class="fas fa-info"></i></li>
                                     <li class="delete-message" @click="removeMessage">Delete Message <i class="fas fa-trash-alt"></i></i></li>
                                 </ul>
                             </div>

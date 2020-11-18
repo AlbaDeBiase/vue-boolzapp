@@ -1,6 +1,4 @@
 
-// ’utente scrive un testo nella parte bassa e digitando“enter”
-// il testo viene aggiunto al thread sopra, come messaggio verde
 var app = new Vue({
 
     el: '#container',
