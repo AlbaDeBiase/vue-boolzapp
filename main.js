@@ -8,6 +8,7 @@ var app = new Vue({
         replyok: 'ok',
         search: '',
         toggle: false,
+        changeIcon:false,
         contacts: [
             {
                 name: 'Michele',
@@ -132,8 +133,9 @@ var app = new Vue({
         },
 
         searchName(){
+
             this.contacts.forEach((contact, i) => {
-                if (contact.name.includes(this.search)) {
+                if (contact.name.toLowerCase().includes(this.search.toLowerCase())) {
                     contact.visible = true;
                 }else{
                     contact.visible = false;
@@ -142,31 +144,19 @@ var app = new Vue({
 
         },
 
+        removeMessage(index){
+            this.contacts[this.indexvalue].messages.splice(index, 1)
+        },
+
+
+
         // openMenu(){
         //     this.contacts[this.indexvalue].messages.show()
         // element.message
         // },
 
-        removeMessage(index){
-            this.contacts[this.indexvalue].messages.splice(index, 1)
-        }
 
 
-        // clickMenu(){
-        //     // al click apri il menu
-        //     ("#dropdown-menu").show
-        // },
-
-
-
-
-        // computed: {
-        // filteredContacts:function() {
-        //     return this.contacts.filter((contact)=>{
-        //         return contact.name.match(this.search)
-        //     });
-        // }
-        // }
 
     } // chiudo methods
 
